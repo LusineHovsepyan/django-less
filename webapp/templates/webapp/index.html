@@ -1,10 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>WebApp</title>
+
+    {% load staticfiles %}
+
+    {% block less %}
+        <link rel="stylesheet/less" type="text/css" href="{% static 'less/bootstrap.less' %}">
+        <link rel="stylesheet/less" type="text/css" href="{% static 'less/custom/custom.less' %}">
+    {% endblock less %}
+
+    {% block js %}
+        <script type="text/javascript" src="{% static 'js/less.js' %}"></script>
+    {% endblock js %}
 </head>
+
 <body>
-    <p>LESS integration with Django.</p>
+
+<!--Navigation Bar -->
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">WebApp</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Page 1</a></li>
+                <li><a href="#">Page 2</a></li>
+                <li><a href="#">Page 3</a></li>
+            </ul>
+        </div>
+    </nav>
+<!--End Navigation Bar -->
+
+<!--Jumbotron message-->
+    <div class="container-fluid">
+        <div class="jumbotron">
+            <h1>Web App</h1>
+            <p>LESS integration with Django.</p>
+        </div>
+    </div>
+<!--End Jumbotron message-->
 </body>
+
+
+<footer>
+<!--Footer-->
+    <div class="container-fluid footer">
+        <hr>
+        <p>Web app 2016.</p>
+    </div>
+<!--End Footer-->
+</footer>
+
 </html>
