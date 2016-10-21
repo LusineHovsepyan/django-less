@@ -4,16 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <title>WebApp</title>
-
     {% load staticfiles %}
+    {% load compile_static %}
 
     {% block less %}
-        <link rel="stylesheet/less" type="text/css" href="{% static 'less/bootstrap.less' %}">
-        <link rel="stylesheet/less" type="text/css" href="{% static 'less/custom/custom.less' %}">
+        <link rel="stylesheet"  href="{% static 'less/custom/custom.less'|compile %}">
+        <link rel="stylesheet"  href="{% static 'less/bootstrap.less'|compile %}">
     {% endblock less %}
 
     {% block js %}
-        <script type="text/javascript" src="{% static 'js/less.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/bootstrap.js' %}"></script>
     {% endblock js %}
 </head>
 
