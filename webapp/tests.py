@@ -1,3 +1,7 @@
 from django.test import TestCase
 
-# Create your tests here.
+
+class InstapageApiClientTestCase(TestCase):
+
+    def setUp(self):
+        self.api = InstapageApiClient("api.example.com", "wp.test.com")
