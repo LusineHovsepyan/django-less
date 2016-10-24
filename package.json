@@ -1,0 +1,19 @@
+{
+  "name": "django-less",
+  "version": "1.0.0",
+  "description": "Django Less Integration",
+  "dependencies": {
+    "less": "^2.7.1"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LusineHovsepyan/django-less.git"
+  },
+  "author": "Lusine Hovsepyan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LusineHovsepyan/django-less/issues"
+  },
+  "homepage": "https://github.com/LusineHovsepyan/django-less#readme"
+}
