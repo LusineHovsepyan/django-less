@@ -125,10 +125,4 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, APP_NAME, 'static')
-STATIC_PRECOMPILER_COMPILERS = (
-    ('static_precompiler.compilers.LESS', {
-        'executable': os.path.join(BASE_DIR, './node_modules/.bin/lessc'),
-        'sourcemap_enabled': True,
-        'global_vars': {'link-color': 'red'}
-    }),
-)
+
