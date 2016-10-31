@@ -8,7 +8,11 @@ import json
 class InstapageApiException(Exception):
     """ Exception for failures during communication with Instapage private API
     """
-    pass
+    def __init__(self, message):
+        self.m_message = message
+
+    def message(self):
+        return self.m_message
 
 
 class InstapageApiClient(object):
